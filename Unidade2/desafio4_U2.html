@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testando Estilos</title>
+</head>
+<body>
+        
+    <!--Todo script deve ser colocado no fim da body-->    
+    <div id="app">  
+        <input type="text" name="nome" id="in">
+
+        <button onclick="adicionar()">Adicionar</button>
+
+        <ul></ul><!--Apesnas definindo uma lista na DOM-->
+    </div>
+        
+    <script>
+
+        function adicionar()
+        {
+            var nomeTexto = document.querySelector('input').value;                                                
+            var lista = document.querySelector('ul');                
+            var elementoNome = document.createElement('li');
+            var nome = document.createTextNode(nomeTexto);
+
+            elementoNome.appendChild(nome);
+            lista.appendChild(elementoNome);
+                    
+        }
+       
+    </script>
+
+</body>
+</html>>

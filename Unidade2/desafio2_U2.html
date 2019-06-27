@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testando Estilos</title>
+</head>
+<body>
+        
+    <!--Todo script deve ser colocado no fim da body-->    
+    <div id="app">
+            <div class="box"></div>            
+            <button id="btn" class="button">Clique aqui</button>
+    </div>
+    
+    <script>        
+        var boxElement = document.querySelector('.box');
+        var buttonElement = document.getElementById('btn');        
+
+        function randomColor()
+        {
+            var letters = "0123456789ABCDEF"
+            var newColor = "#";
+
+            for(var x = 0; x < 6; x++)
+            {
+                newColor = newColor + letters[Math.floor(Math.random() * 16)];
+            }//end for
+
+            return newColor;
+        }
+
+        buttonElement.onmouseover = function() {         
+
+            boxElement.style.width = '100px';            
+            boxElement.style.height = '100px';
+            boxElement.style.backgroundColor = randomColor();
+        };
+        
+        
+        
+    </script>    
+
+</body>
+</html>>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <title>Título da pag</title>
+    
+    <head>
+        <meta charset="UTF-8"/>
+        <h1>Hello Word!!!</h1> 
+    </head>
+    <body>
+        <!-- Todo código js deve ser escrito no fim da <body> -->
+        <div id="app">
+            
+            <input type="text" name="nome" /><!-- cria campo de entrada de texto -->            
+            <button class="botao" >Adicionar</button>
+        </div>
+        
+        <script>
+            var btnElement = document.querySelector('button.botao');
+            var inputElement = document.querySelector('body div#app input[name=nome]');
+
+            btnElement.onclick = function(){                
+                alert('Mensagem: ' + inputElement.value);
+            }
+                        
+        </script>
+    </body>
+    
+</html>

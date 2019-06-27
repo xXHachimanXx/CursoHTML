@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Testando Estilos</title>
+</head>
+<body>
+        
+    <!--Todo script deve ser colocado no fim da body-->    
+    <div id="app">  
+        <ul></ul><!--Apesnas definindo uma lista na DOM-->
+    </div>
+        
+    <script>
+
+        var vetor = ["Diego", "Gabriel", "Lucas"];
+        var lista = document.querySelector('ul'); //pegar lista na DOM
+          
+        for(var y = 0; y < vetor.length; y++)
+        {
+            var nome = document.createElement('li');
+            var textElement = document.createTextNode(vetor[y]);
+
+            nome.appendChild(textElement); //atribuir o texto do vetor( no caso, um nome ) ao elemento nome na DOM
+            lista.appendChild(nome); //atribuir o elemento nome à Lista da DOM
+
+        }//end for
+       
+    </script>
+
+</body>
+</html>>
