@@ -10,7 +10,7 @@ var myPromise = function() {
             xhr.send(null);
 
             xhr.onreadystatechange = function() {
-                if(xhr.readyState === 4)
+                if(xhr.readyState === 4) 
                 {
                     //se tiver OK...
                     if(xhr.status === 200)
